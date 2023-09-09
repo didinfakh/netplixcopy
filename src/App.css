@@ -1,0 +1,29 @@
+#posterImage {
+  height: 100vh;
+}
+.heightResponsive {
+  height: 100vh;
+}
+.btnMovie {
+  color: white;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.cardMovie:hover {
+  background-color: rgb(41, 41, 41);
+}
+@media only screen and (max-width: 600px) {
+  #posterImage {
+    height: 70vh;
+  }
+  .heightResponsive {
+    height: 70vh;
+  }
+  #containerPoster {
+    background-color: black;
+  }
+  #input {
+    width: 15vh;
+  }
+}
