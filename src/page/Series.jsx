@@ -8,7 +8,7 @@ const Series = () => {
   const [active, setActive] = useState('Popular');
   useEffect(() => {
     getListFilm();
-  });
+  }, [mode]);
   const getListFilm = async () => {
     const response = await fetch(`https://api.themoviedb.org/3/tv/${mode}?api_key=2130a36c43def715d1029ef24cf94f49`);
     const data = await response.json();
